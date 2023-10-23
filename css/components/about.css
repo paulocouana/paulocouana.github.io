@@ -1,6 +1,7 @@
+/*Applies flexbos properties to the elements with the .about class*/
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*space-between sets the gap between the items to 4rem and adds a scroll margin of 20rem at the top of the container below*/
   gap: 4rem;
   scroll-margin-top: 20rem;
 }
@@ -32,10 +33,11 @@
   max-width: 66rem;
 }
 
+/*This media query targets screens with a maximum width of 768px*/
 @media only screen and (max-width: 768px) {
   .about {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /*Sets the flex container wth the class .about to have a columm layout to be positioned horizontally*/
+    align-items: center; /*Center the child elements vertically within the flex container*/
   }
 
   .about .about_left {
